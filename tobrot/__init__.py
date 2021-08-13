@@ -55,8 +55,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "539295917"))
 
 # Get these values from my.telegram.org
 # to store the channel ID who are authorized to use the bot
-AUTH_CHANNEL = [int(x) for x in os.environ.get(
-    "AUTH_CHANNEL", "539295917").split()]
+AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "539295917").split()]
 
 # the download location, where the HTTP Server runs
 DOWNLOAD_LOCATION = "./DOWNLOADS"
@@ -83,53 +82,50 @@ EDIT_SLEEP_TIME_OUT = int(os.environ.get("EDIT_SLEEP_TIME_OUT", "15"))
 MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START = int(
     os.environ.get("MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START", 600)
 )
-MAX_TG_SPLIT_FILE_SIZE = int(os.environ.get(
-    "MAX_TG_SPLIT_FILE_SIZE", "1072864000"))
+MAX_TG_SPLIT_FILE_SIZE = int(os.environ.get("MAX_TG_SPLIT_FILE_SIZE", "1072864000"))
 # add config vars for the display progress
-FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "●")
-UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "○")
+FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "❁")
+UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "⊙")
 # add offensive API
 TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
 CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
-LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech@leech_expert_bot")
-LEECH_UNZIP_COMMAND = os.environ.get("LEECH_UNZIP_COMMAND", "leechunzip@leech_expert_bot")
-LEECH_ZIP_COMMAND = os.environ.get("LEECH_ZIP_COMMAND", "leechzip@leech_expert_bot")
-GLEECH_COMMAND = os.environ.get("GLEECH_COMMAND", "gleech@leech_expert_bot")
-GLEECH_UNZIP_COMMAND = os.environ.get("GLEECH_UNZIP_COMMAND", "gleechunzip@leech_expert_bot")
-GLEECH_ZIP_COMMAND = os.environ.get("GLEECH_ZIP_COMMAND", "gleechzip@leech_expert_bot")
-YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl@leech_expert_bot")
-GYTDL_COMMAND = os.environ.get("GYTDL_COMMAND", "gytdl@leech_expert_bot")
+LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech")
+LEECH_UNZIP_COMMAND = os.environ.get("LEECH_UNZIP_COMMAND", "leechunzip")
+LEECH_ZIP_COMMAND = os.environ.get("LEECH_ZIP_COMMAND", "leechzip")
+GLEECH_COMMAND = os.environ.get("GLEECH_COMMAND", "gleech")
+GLEECH_UNZIP_COMMAND = os.environ.get("GLEECH_UNZIP_COMMAND", "gleechunzip")
+GLEECH_ZIP_COMMAND = os.environ.get("GLEECH_ZIP_COMMAND", "gleechzip")
+YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
+GYTDL_COMMAND = os.environ.get("GYTDL_COMMAND", "gytdl")
 RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
-DESTINATION_FOLDER = os.environ.get(
-    "DESTINATION_FOLDER", "TorrentLeech-Gdrive")
+DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "TorrentLeech-Gdrive")
 INDEX_LINK = os.environ.get("INDEX_LINK", "")
-TELEGRAM_LEECH_COMMAND = os.environ.get("TELEGRAM_LEECH_COMMAND", "tleech@leech_expert_bot")
+TELEGRAM_LEECH_COMMAND = os.environ.get("TELEGRAM_LEECH_COMMAND", "tleech")
 TELEGRAM_LEECH_UNZIP_COMMAND = os.environ.get(
-    "TELEGRAM_LEECH_UNZIP_COMMAND", "tleechunzip@leech_expert_bot"
+    "TELEGRAM_LEECH_UNZIP_COMMAND", "tleechunzip"
 )
-CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel@leech_expert_bot")
-GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize@leech_expert_bot")
-STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status@leech_expert_bot")
-SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumbnail@leech_expert_bot")
-CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumbnail@leech_expert_bot")
+CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel")
+GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize")
+STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status")
+SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumbnail")
+CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumbnail")
 UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "False")
-PYTDL_COMMAND = os.environ.get("PYTDL_COMMAND", "pytdl@leech_expert_bot")
-GPYTDL_COMMAND = os.environ.get("GPYTDL_COMMAND", "gpytdl@leech_expert_bot")
+PYTDL_COMMAND = os.environ.get("PYTDL_COMMAND", "pytdl")
+GPYTDL_COMMAND = os.environ.get("GPYTDL_COMMAND", "gpytdl")
 LOG_COMMAND = os.environ.get("LOG_COMMAND", "log")
-CLONE_COMMAND_G = os.environ.get("CLONE_COMMAND_G", "gclone@leech_expert_bot")
-UPLOAD_COMMAND = os.environ.get("UPLOAD_COMMAND", "upload@leech_expert_bot")
-RENEWME_COMMAND = os.environ.get("RENEWME_COMMAND", "renewme@leech_expert_bot")
-RENAME_COMMAND = os.environ.get("RENAME_COMMAND", "rename@leech_expert_bot")
-TOGGLE_VID = os.environ.get("TOGGLE_VID", "togglevid@leech_expert_bot")
-TOGGLE_DOC = os.environ.get("TOGGLE_DOC", "toggledoc@leech_expert_bot")
+CLONE_COMMAND_G = os.environ.get("CLONE_COMMAND_G", "gclone")
+UPLOAD_COMMAND = os.environ.get("UPLOAD_COMMAND", "upload")
+RENEWME_COMMAND = os.environ.get("RENEWME_COMMAND", "renewme")
+RENAME_COMMAND = os.environ.get("RENAME_COMMAND", "rename")
+TOGGLE_VID = os.environ.get("TOGGLE_VID", "togglevid")
+TOGGLE_DOC = os.environ.get("TOGGLE_DOC", "toggledoc")
 RCLONE_COMMAND = os.environ.get("RCLONE_COMMAND", "rclone")
-HELP_COMMAND = os.environ.get("HELP_COMMAND", "help@leech_expert_bot")
+HELP_COMMAND = os.environ.get("HELP_COMMAND", "help")
 BOT_START_TIME = time.time()
 # dict to control uploading and downloading
 gDict = defaultdict(lambda: [])
 # user settings dict #ToDo
 user_settings = defaultdict(lambda: {})
-gid_dict = defaultdict(lambda: [])
 
 # Rclone Config Via any raw url
 ###########################################################################
@@ -145,8 +141,7 @@ except KeyError:                                                          #
 
 def multi_rclone_init():
     if RCLONE_CONFIG:
-        LOGGER.warning(
-            "Don't use this var now, put your rclone.conf in root directory")
+        LOGGER.warning("Don't use this var now, put your rclone.conf in root directory")
     if not os.path.exists("rclone.conf"):
         LOGGER.warning("Sed, No rclone.conf found in root directory")
         return
