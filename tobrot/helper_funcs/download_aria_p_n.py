@@ -317,24 +317,15 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                 prog = "[{0}{1}]".format("".join([FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 5))]),"".join([UN_FINISHED_PROGRESS_STR for i in range(20 - math.floor(percentage / 5))]))
 
                 msg += f"\n<b>╭──「  ⏬ 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂 ⏬  」</b>"
-                msg += f"\n<b>│</b>"
                 msg += f"\n<b>├</b> <code>{downloading_dir_name}</code>"
-                msg += f"\n<b>│</b>"
                 msg += f"\n<b>├</b> <b>{prog}</b>"
-                msg += f"\n<b>│</b>"
-                msg += f"\n<b>├  📦 𝙏𝙤𝙩𝙖𝙡 𝙁𝙞𝙡𝙚 𝙎𝙞𝙯𝙚: {file.total_length_string()}</b>"
-                msg += f"\n<b>│</b>"
-                msg += f"\n<b>├  🔄 𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨: {file.progress_string()}</b>"
-                msg += f"\n<b>│</b>"
-                msg += f"\n<b>├  ⏰ 𝙀𝙏𝘼: {file.eta_string()}</b>"
-                msg += f"\n<b>│</b>"
+                msg += f"\n<b>├  ☠️ 𝙏𝙤𝙩𝙖𝙡 𝙁𝙞𝙡𝙚 𝙎𝙞𝙯𝙚: {file.total_length_string()}</b>"
+                msg += f"\n<b>├  🚴 𝙋𝙧𝙤𝙜𝙧𝙚𝙨𝙨: {file.progress_string()}</b>"
+                msg += f"\n<b>├  ⏳ 𝙀𝙏𝘼: {file.eta_string()}</b>"
                 msg += f"\n<b>├  {msgg}</b>" 
-                msg += f"\n<b>│</b>"
-                msg += f"\n<b>├  ⚡️ 𝙨𝙥𝙚𝙚𝙙: {file.download_speed_string()}</b>" 
-                msg += f"\n<b>│</b>"
-                msg += f"\n<b>├  📋 𝙂𝙞𝘿:</b> <code>{gid}</code>"
-                msg += f"\n<b>│</b>"
-                msg += f"\n<b>╰──「 🚒 Using Engine:-Aria2 」</b>"
+                msg += f"\n<b>├  🚀️ 𝙨𝙥𝙚𝙚𝙙: {file.download_speed_string()}</b>" 
+                msg += f"\n<b>├  👾 𝙂𝙞𝘿:</b> <code>{gid}</code>"
+                msg += f"\n<b>╰──「 🤖 Using Engine:-Aria2 」</b>"
                 inline_keyboard = []
                 ikeyboard = []
                 ikeyboard.append(
