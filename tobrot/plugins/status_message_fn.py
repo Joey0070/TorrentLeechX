@@ -80,14 +80,14 @@ async def status_message_f(client, message):
     free = humanbytes(free)
 
     ms_g = (
-        f'<b>╭───「  ⭕️ BOT STATISTICS ⭕️  」</b>\n' \
+        f'<b>╭───「  🤖 BOT STATISTICS 🤖  」</b>\n' \
         f'<b>│</b>\n' \
         f"<b>├  ⏰ Bot Uptime : {hr} : {mi} : {se}</b>\n" \
         f'<b>├  💾 Total Disk Space : {total}</b>\n' \
         f'<b>├  📀 Total Used Space : {used}</b>\n' \
         f'<b>├  💿 Total Free Space : {free}</b>\n' \
         f'<b>│</b>\n' \
-        f'<b>╰───「 🚸 TorrentLeechX 🚸 」</b>'
+        f'<b>╰───「 🚸 ROOT GAMER 🚸 」</b>'
     )
     # LOGGER.info(ms_g)
 
